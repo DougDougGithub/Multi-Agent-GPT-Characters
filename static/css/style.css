@@ -1,0 +1,43 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    background-color: hsl(250, 24%, 19%);
+    color: #fff;
+    scrollbar-width: none; /*firefox support */    
+}
+
+#main-container {
+    display: flex;
+    gap: 70px;
+}
+
+.agent-container {
+    width: 500px;
+    text-align: center;
+}
+
+.agent-text {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 1px #000, 0px 0px 2px #000, 0px 0px 3px #000, 0px 0px 4px #000, 0px 0px 5px #000, 0px 0px 6px #000, 0px 0px 7px #000;
+    margin-top: 4px;
+    
+    /* These are necessary if I'm animating the letters */
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap */
+    justify-content: center; /* Center the text content */
+    width: 100%;
+    max-width: 600px; /* Ensure it doesn't exceed 600px */
+}
+
+/* We put all of the letterized letters into these words elements */
+.agent-word {
+    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Applies to each individual letter */
+.agent-letter {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
